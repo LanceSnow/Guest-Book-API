@@ -1,11 +1,5 @@
 import { openUI } from './ui'
 
-// external servers being used by the project - Please change these to your own if working on something else!
-export let fireBaseServer =
-  'https://us-central1-dcl-guestbook.cloudfunctions.net/app/'
-
-// get player data
-
 export class GuestBook extends Entity {
   eventName: string
   constructor(

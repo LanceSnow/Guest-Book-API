@@ -79,7 +79,7 @@ background.visible = false
 background.isPointerBlocker = false
 
 export const headerText = new UIText(background)
-headerText.value = 'I was also blown away by the crater!'
+headerText.value = 'March March, World Peace'
 headerText.name = 'header'
 headerText.width = '650px'
 headerText.height = '800px'
