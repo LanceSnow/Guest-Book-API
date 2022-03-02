@@ -9,8 +9,8 @@
   },
   "owner": "",
   "scene": {
-    "parcels": ["-133,-42"],
-    "base": "-133,-42"
+    "parcels": ["-115,-63"],
+    "base": "-115,-63"
   },
   "communications": {
     "type": "webrtc",
@@ -29,14 +29,14 @@
       "name": "spawn1",
       "default": true,
       "position": {
-        "x": 1,
+        "x": 13,
         "y": 0,
-        "z": 15
+        "z": 1
       },
       "cameraTarget": {
-        "x": 15,
+        "x": 8,
         "y": 1,
-        "z": 15
+        "z": 8
       }
     }
   ]

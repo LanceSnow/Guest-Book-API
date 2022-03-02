@@ -10,8 +10,8 @@ export function buildBuilderScene() {
   const _scene = new Entity('_scene')
   engine.addEntity(_scene)
   const transform = new Transform({
-    position: new Vector3(0, 0, 0),
-    rotation: new Quaternion(0, 0, 0, 1),
+    position: new Vector3(16, 0, 16),
+    rotation: Quaternion.Euler(0, 180, 0),
     scale: new Vector3(1, 1, 1),
   })
   _scene.addComponentOrReplace(transform)
@@ -33,20 +33,20 @@ export function buildBuilderScene() {
   })
   entity.addComponentOrReplace(transform2)
 
-  const narrowCrater = new Entity('narrowCrater')
-  engine.addEntity(narrowCrater)
-  narrowCrater.setParent(_scene)
-  const transform3 = new Transform({
-    position: new Vector3(10.355362892150879, 0, 8),
-    rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
-  })
-  narrowCrater.addComponentOrReplace(transform3)
-  const gltfShape2 = new GLTFShape('models/Crater_02/Crater_02.glb')
-  gltfShape2.withCollisions = true
-  gltfShape2.isPointerBlocker = true
-  gltfShape2.visible = true
-  narrowCrater.addComponentOrReplace(gltfShape2)
+  // const narrowCrater = new Entity('narrowCrater')
+  // engine.addEntity(narrowCrater)
+  // narrowCrater.setParent(_scene)
+  // const transform3 = new Transform({
+  //   position: new Vector3(10.355362892150879, 0, 8),
+  //   rotation: new Quaternion(0, 0, 0, 1),
+  //   scale: new Vector3(1, 1, 1),
+  // })
+  // narrowCrater.addComponentOrReplace(transform3)
+  // const gltfShape2 = new GLTFShape('models/Crater_02/Crater_02.glb')
+  // gltfShape2.withCollisions = true
+  // gltfShape2.isPointerBlocker = true
+  // gltfShape2.visible = true
+  // narrowCrater.addComponentOrReplace(gltfShape2)
 
   const signpost = new Entity('signpost')
   engine.addEntity(signpost)
@@ -428,44 +428,44 @@ export function buildBuilderScene() {
   script5.init()
   script1.spawn(
     signpost,
-    { text: 'The extraordinary crater\n(NOT a tourist trap)', fontSize: 19 },
+    { text: 'March March', fontSize: 20 },
     createChannel(channelId, signpost, channelBus)
   )
   script2.spawn(
     signpostRoot,
     {
-      text: "Isn't nature incredible?\nJust look at that!\nJust Wow!",
+      text: "Give Peace A Chance",
       fontSize: 20,
     },
     createChannel(channelId, signpostRoot, channelBus)
   )
   script3.spawn(
     signpostWood,
-    { text: 'Pictures of crater \n50 USD\n', fontSize: 20 },
+    { text: 'World Peace', fontSize: 30 },
     createChannel(channelId, signpostWood, channelBus)
   )
   script2.spawn(
     signpostRoot2,
     {
       text:
-        'Take a selfie,\nShare it with your friends,\nyour family, pets\nTell them all to come!',
+        'Give Peace A Chance',
       fontSize: 20,
     },
     createChannel(channelId, signpostRoot2, channelBus)
   )
   script1.spawn(
     signpost2,
-    { text: 'The extraordinary crater\n(NOT a tourist trap)', fontSize: 19 },
+    { text: 'March March', fontSize: 20 },
     createChannel(channelId, signpost2, channelBus)
   )
   script4.spawn(
     signpostGolden,
-    { text: 'Guided tours of the crater\nAsk in vistor center', fontSize: 20 },
+    { text: 'Welcome To DOUBLE', fontSize: 20 },
     createChannel(channelId, signpostGolden, channelBus)
   )
   script5.spawn(
     roundSignpost,
-    { text: 'Park your \nbike here\n15 USD', fontSize: 20 },
+    { text: 'Stop War', fontSize: 30 },
     createChannel(channelId, roundSignpost, channelBus)
   )
 }
