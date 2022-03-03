@@ -22,8 +22,8 @@ source.volume = 1;
 source.playing = true
 let guestBook1 = new GuestBook(
   {
-    position: new Vector3(14, 0, 4),
-    rotation: Quaternion.Euler(0, 0, 0),
+    position: new Vector3(2, 0, 4),
+    rotation: Quaternion.Euler(0, 180, 0),
   },
   'March March'
 )
@@ -31,8 +31,8 @@ guestBook1.addComponent(source)
 
 let guestBook2 = new GuestBook(
   {
-    position: new Vector3(14, 0, 12),
-    rotation: Quaternion.Euler(0, 0, 0),
+    position: new Vector3(2, 0, 12),
+    rotation: Quaternion.Euler(0, 180, 0),
   },
   'March March'
 )
@@ -47,7 +47,7 @@ nftShape.isPointerBlocker = true
 nftShape.visible = true
 
 const nft_entity = new Tshirt(new Transform({
-  position: new Vector3(4, 1.5, 4),
+  position: new Vector3(12, 1.5, 4),
   scale: new Vector3(2, 2, 2),
 }))
 
@@ -55,7 +55,7 @@ nft_entity.addComponent(source)
 engine.addEntity(nft_entity)
 
 const nft_entity1 = new Tshirt(new Transform({
-  position: new Vector3(4, 1.5, 12),
+  position: new Vector3(12, 1.5, 12),
   scale: new Vector3(2, 2, 2),
 }))
 
